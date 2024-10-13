@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cambiar tema de la página</h1>
+    <button id="redBtn">Botón Rojo</button>
+    <button id="blueBtn">Botón Azul</button>
+    <button id="greenBtn">Botón Verde</button>
+    <button id="resetBtn">Botón reset</button>
+
+    <script>
+        // Obtenemos botones por id
+        const redBtn = document.getElementById('redBtn');
+        const blueBtn = document.getElementById('blueBtn');
+        const greenBtn = document.getElementById('greenBtn');
+        const resetBtn = document.getElementById('resetBtn');
+
+        redBtn.addEventListener("click", function(){
+            document.body.style.backgroundColor = "lightcoral";
+            document.body.style.color="darkred";
+        });
+
+        blueBtn.addEventListener("click", function(){
+            document.body.style.backgroundColor = "lightblue";
+            document.body.style.color="darkblue";
+        });
+        greenBtn.addEventListener("click", function(){
+            document.body.style.backgroundColor="lightgreen";
+            document.body.style.color="darkgreen";
+        });
+        resetBtn.addEventListener("click", function(){
+            document.body.style.backgroundColor="white";
+            document.body.style.color="black";
+
+        });
+
+    </script>
+</body>
+</html>
